@@ -44,4 +44,8 @@ echo"<br>";
 echo(1 <=> 2)."<br>"; //if the left is bigger than right the result will be -1;
 echo(1 <=> 1)."<br>"; // zero;
 echo(2 <=> 1)."<br>";// if left is smaller than right == 1;
+
+//null function (which is the first VAR defined)
+echo $c??$b??$a; // result: 2
+
 ?>
