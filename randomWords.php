@@ -1,19 +1,13 @@
 <?php
-
-$words=array("sun","moon","sky");
-$randomWords=array();
-
-for ($i=0; $i < 3 ; $i++) { 
-    $randomWords[$i] = str_shuffle($words[$i]);
+$pkms=array("zapdos","moltres","articuno","lugia","ho-oh");
+    /* $randomWords=array(); */ //Now we are gonna use strings.
+$form="<form action='randomWords2.php'>"; //form action is to link to another form
+for ($i=0; $i < count($pkms) ; $i++){ 
+    $form .= "The pkm: ".str_shuffle($pkms[$i])." ".
+    "<input type='text' name='word.$i'>".
+    "<br>";
 }
-print_r($randomWords); //print is for arrays, echo for strings
-
-echo " 
-<form action='randomWords2.php'>
-    <input type='text' name='w0'>
-    <input type='text' name='w1'>
-    <input type='text' name='w2'>
-    <button type='submit'>Sent</button>
-</form>
-";
+$button="<button type='submit'>Sent</button>";
+$fform="</form>";
+echo $form.$button.$fform;
 ?>
