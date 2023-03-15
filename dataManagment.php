@@ -1,74 +1,70 @@
 <?php
 
-echo 'Single quotes is to write text  \' more text \'. <br>';
 echo 'To write the single quote you must to write backSlash + singleQuote\'.<br>
 And to write the backslash you must to write double backslah \\.<br><br>';
 
-$firstName = 'Nick';
-echo "My name is: $firstName <br>"; //first way to write all with doubleQuote
-echo 'My name is: '.$firstName. '<br>'; //second way.
-echo '<br><br>';
+$firstName = 'nick';
+$nick = 'PHP student';
+    echo "My name is: $firstName <br>"; //first way to write all with doubleQuote
+    echo 'My name is: '.$firstName. '<br><br>'; //second way.
+    echo "In this moment I'm ${$firstName} and my name is $firstName <br><br>"; // $$
 
-//youtube class to single arrayList
-$carBrands = array("toyota" ,"mercedes","kia","nissan","ford","bmw"); 
-$arraySize = sizeof($carBrands); //when the code is too long you must to make a newVar (just speed)
 
-echo 'THIS IS A FOR BUCKLE <br>';
-    for ($i=0; $i < $arraySize ; $i++){ 
-        echo $carBrands[$i].'<br>';
+echo '<strong>ARRAY EXAMPLE</strong> <br>';
+    $courses = [
+        'backend' => [
+            'PHP',
+            'Laravel',
+            'JS'
+        ]
+    ];
+    echo "{$courses['backend'][1]}".'<br>';
+    echo "{$courses['backend'][2]}".'<br><br>';
+
+
+echo '<strong>CLASS EXAMPLE</strong> <br>';
+    class User
+    {
+        public $name = 'Nick';
     }
-echo '<br><br>';
-
-echo 'THIS IS A FOR_EACH BUCKLE <br>';
-    foreach($carBrands as $brands){
-        echo $brands.'<br>';
-    }
-echo '<br><br>';
-
-//youtube class to double arrayList 
-//https://www.youtube.com/watch?v=_X2DWUvf4QM&list=PLD15A0EB894216305&index=22
-
-$list = array(
-        'User 1:' => array('name'=>'Thomas' ,'gender'=> 'Male','profession'=> 'Nurse'),
-        //if you don't put a array name (user_1 ex) then, just it will appear number 0.
-        'User 2:' => array('name'=> 'Antonia','gender'=> 'Female','profession'=> 'Nurse'), 
-        'User 3:' => array('name'=> 'Tolon','gender'=> 'Female','profession'=> 'NurseAssist'),
-        );
-echo 'THIS IS A FOR_EACH BUCKLE, DOUBLE ARRAY <br><br>';
-foreach($list as $users => $userInformation){
-    echo '<strong>'.$users.'</strong>'.'<br>';
-
-    foreach ($userInformation as $content) {
-        echo $content.'<br>';
-    }
-}
-echo '<br><br>';
-
-//switch code class
-$months = 'march';
-switch ($months) {
-    case 'december':
-    case 'january':
-    case 'february':
-        echo 'in this month you may to have holidays :)';
-        break;
-    case 'july':
-        echo 'in this month maybe you will have winter vacations :0';
-    default:
-        echo 'you must to work mate :\'c';
-        break;
-}
-echo '<br><br>';
-
-//return and $ in fns
-$day=16;
-$month='november';
-$year=2023;
-function displayDate(){
-    GLOBAL $day,$month,$year;
-    return $day.'/'.$month.'/'.$year;
-}
-echo displayDate().'<br><br>';
+    $user = new User;
+    echo "$user->name want to know {$courses['backend'][0]} <br>";
+    echo $user->name.' want to know '."{$courses['backend'][0]}<br><br>";
 
 
+echo '<strong>FN EXAMPLE</strong> <br>';
+    function getStudent(){
+        return 'newStudent';
+    };
+    $newStudent = 'new PHP student';
+    echo "I'm a ${getStudent()} <br><br>"; //I'm a new PHP student.
 
+
+echo '<strong>EXTRACTION EXAMPLE</strong><br>';
+    $longText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam, facilis placeat obcaecati sed dolore ratione accusantium at distinctio tenetur, molestiae magni repellendus vitae dignissimos illum atque ad voluptatum hic Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur incidunt, ipsum vero laboriosam nobis quas tempora, iure qui repellat mollitia est odio doloremque. Ex, explicabo illo? Optio sed perferendis qui.';
+    echo $longText[6].'<br>';  // i
+    $extraction = substr($longText, 0, 300); //like return.
+    echo "$extraction ... [click to see more]<br><br>"; //like blog
+
+    
+echo '<strong>HOW TO CHANGE FROM STRING TO ARRAY (EXPLODE)</strong><br>';
+    $data = 'javascript, php, laravel'; //items
+    $tags = explode(', ', $data); // to change to array 
+    echo "<pre>"; // pre command is to tidy the array.
+    var_dump($tags);
+    echo '<br><br>';
+
+
+echo '<strong>HOW TO CHANGE FROM ARRAY TO STRING (IMPLODE)</strong><br>';
+    $courses = ['javascript', 'php', 'laravel'];
+    echo implode(', ', $courses);
+    echo '<br><br>';
+
+
+echo '<strong>HOW TO CUT THE CODE (TRIM)</strong><br>';
+    $toCutExample = '   This is the example to cut in PHP       '; 
+    // the code appear rendered because the PHP tool can clean the code.
+    //the echo <pre> is still working (LINE 53)
+    $toCutExample = trim($toCutExample);
+    echo $toCutExample.'<br>'.'the text now appears fixed';
+?>
