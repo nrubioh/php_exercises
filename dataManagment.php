@@ -46,7 +46,7 @@ echo '<strong>EXTRACTION EXAMPLE</strong><br>';
     $extraction = substr($longText, 0, 300); //like return.
     echo "$extraction ... [click to see more]<br><br>"; //like blog
 
-    
+
 echo '<strong>HOW TO CHANGE FROM STRING TO ARRAY (EXPLODE)</strong><br>';
     $data = 'javascript, php, laravel'; //items
     $tags = explode(', ', $data); // to change to array 
@@ -60,11 +60,16 @@ echo '<strong>HOW TO CHANGE FROM ARRAY TO STRING (IMPLODE)</strong><br>';
     echo implode(', ', $courses);
     echo '<br><br>';
 
-
-echo '<strong>HOW TO CUT THE CODE (TRIM)</strong><br>';
+$trimTitle = '<strong>how to cut the code (trim)</strong><br>';
+echo strtoupper($trimTitle); // to capslock mayus 
     $toCutExample = '   This is the example to cut in PHP       '; 
     // the code appear rendered because the PHP tool can clean the code.
     //the echo <pre> is still working (LINE 53)
     $toCutExample = trim($toCutExample);
-    echo $toCutExample.'<br>'.'the text now appears fixed';
+    echo $toCutExample.'<br>'.'the text now appears fixed'.'<br><br>';
+
+
+$lowerTitle = '<strong>HOW TO CHANGE THE UPPER WORDS TO LOWERS</strong><br>';
+echo $lowerTitle; //to see the normal text
+echo strtolower($lowerTitle).'just you\'d write \'strToLower($)\''; //to pass to lowerTitle
 ?>
