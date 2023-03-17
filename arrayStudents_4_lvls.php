@@ -65,4 +65,3 @@ echo '3. '."{$akira['name']}".'`s favorite food is: '."{$akira['food']['likes'][
 
 
 
-
