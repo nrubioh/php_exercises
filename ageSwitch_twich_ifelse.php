@@ -33,7 +33,7 @@ function ageList($ages){
             default:
                 echo $age." not defined age: the space will be next to the shelf";
                 break;           
-        }
+        } 
     }
 }
 ageList($ages);
