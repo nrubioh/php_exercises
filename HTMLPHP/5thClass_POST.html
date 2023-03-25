@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Method</title>
+</head>
+<body>
+    <script>
+        const formData =  new FormData(); //it`s like form HTML
+
+        formData.append('name','Nick');
+        formData.append('age', 32);
+
+        fetch("5thClass_server.php?color=orange",{ //to send by getMethod just put after php?text
+            body: formData,
+            method:"POST"
+        })
+        .then(res=>res.text())
+        .then(data=>{
+            console.log(data);
+        });
+    </script>
+</body>
+</html>
