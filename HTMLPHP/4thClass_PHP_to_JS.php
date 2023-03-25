@@ -7,7 +7,6 @@ $usersPHP = array(
     );
 $eeveeYearsPHP = 3; 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +16,11 @@ $eeveeYearsPHP = 3;
     <title>How to pass vars to JS </title>
 </head>
 <body>
-
-<script> 
+    <script> 
         let usersJS = JSON.parse('<?= json_encode($usersPHP)?>');
         let eeveeYearsJS = <?= $eeveeYearsPHP ?>;
-</script>
-
-<!-- to link the JS to PHP -->
-<script src="./4thClass_JS.js"></script> 
-
+    </script>
+    <!-- to link the JS to PHP -->
+    <script src="./4thClass_JS.js"></script> 
 </body>
 </html>
