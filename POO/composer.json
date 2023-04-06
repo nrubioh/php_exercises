@@ -1,0 +1,9 @@
+{
+    "name": "nrh/poo",
+    "autoload": {
+        "psr-4": {
+            "Nrh\\Poo\\": "src/"
+        }
+    },
+    "require": {}
+}
