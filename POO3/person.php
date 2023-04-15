@@ -21,4 +21,4 @@ class Person{
         ";
         return $data;
     }
-}//end class Person
+}//end class person
