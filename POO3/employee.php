@@ -18,5 +18,24 @@ class Employee extends Person
     {
         return $this->strPosition;
     }
+    
+    public function getPersonalData()
+    {
+        $data = "
+            <h2>Personal Data</h2>
+            DPI: {$this->intDPI}<br>
+            Name: {$this->strName}<br>
+            Age: {$this->intAge}<br>
+        ";
+        return $data;
+    }
+    public function setMessage(string $message)
+    {
+        $this->strMessage = $message;
+    }
+    public function getMessage():string
+    {
+        return $this->strMessage.''.$this->strName;
+    }
 
 }//end class employee

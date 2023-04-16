@@ -1,7 +1,7 @@
 <?php
-require_once("person.php");
+require_once("employee.php");
 
-class Client extends Person
+class Client extends Employee
 {
     protected $fltCredit; //new property in this class 
 
@@ -18,5 +18,4 @@ class Client extends Person
     {
         return $this->fltCredit;
     }
-
 }//end class client
