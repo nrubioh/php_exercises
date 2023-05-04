@@ -1,0 +1,22 @@
+virtual enviroment: is to put determinated version of differents tools (php,mysql,etc..)
+
+vagrant: virtualBox->install->vagrantUp.com->install(amd64)->app. vagrantup.com->findBoxes
+cmd: to check: vagrant ->mkdir newProject->vagrant init -example/example64 ->vagrant up...
+(if you have troubles / how activate your virtualization in your BIOS)->now you can installed other things.
+to start: vagrant up
+to connect: vagrant ssh.
+to exit: exit
+to stop virtual machine: vagran halt 
+
+laragon: .org/download -> start all -> you can migrate all your files from wamp mpp or xa to laragon
+
+virtual host: 
+xampp -> vscode conffig->explore:c:\win\xampp\apache\conf\extra->httpd-vhost.conf
+DocumentRoot: "C:/xampp/htdocs/phpExcersices/WHERE"
+ServerName: which url you want example: form.test
+serverAlias: same
+errors:
+ErrorLog: "logs/dummy-host.form.test-error.log"
+CustomLog: "logs/dummy-host.form.test-access.log" common
+win->system32 -> drivers-> etc -> host
+here is where to put other names linked with the apache IP

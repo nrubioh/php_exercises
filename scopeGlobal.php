@@ -15,3 +15,4 @@ function my_function2(){
 }
 my_function2();
 echo "\n";
+

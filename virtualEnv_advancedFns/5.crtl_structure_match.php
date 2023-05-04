@@ -4,7 +4,6 @@
  * Switch case is to put code and other functions in case insides.
  * Match is to choose simple things.
  */
-
 function get_country_name_switch($country){
     $name="";
     switch ($country) {
@@ -12,26 +11,28 @@ function get_country_name_switch($country){
             $name = "CHILE";
             break;
         case 'US':
-            $name = "united states";
+            $name = "UNITED STATES";
             break;
         case 'AU':
-            $name = "australia";
+            $name = "AUSTRALIA";
             break;
         default:
-            $name = "Idk that country";
+            $name = "IDK THAT COUNTRY";
             break;
     }
     return $name; //in the out of switch
 }
+    echo get_country_name_switch(readline("Which country? (CAPS LOCKS): "));
+    echo "\n";
+
 
 function get_country_name_match($country){
     return match($country){
         "cl" => "chile",
         "us" => "united states",
         "au" => "australia",
-        default => "IDK THAT COUNTRY"
+        default => "idk that country"
     };
 }
-
-echo get_country_name_match(readline("Which country? "));
-echo "\n";
+    echo get_country_name_match(readline("Which country? "));
+    echo "\n";
