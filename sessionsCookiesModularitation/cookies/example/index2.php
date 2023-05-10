@@ -1,10 +1,10 @@
 <?php
 /**
- * expires_or_options.
+ * expires_or_options:
  * the time() meaning that the function will expire when is turn on
  * + 60(sec)*60(1hr)*24(1day)*30(1month)
- *
- * path.
+ *  
+ * path:
  * if you want the cookie will be in any part of your website -> "/"
  */ 
 if ( !isset( $_COOKIE[ "example_cookie"] ) ) {
