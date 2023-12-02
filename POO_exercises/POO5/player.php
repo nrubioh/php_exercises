@@ -1,10 +1,10 @@
 <?php
 
-/* Como te daras cuenta , el codigo esta escrito obviamente en ingles por un intento frustrado de escapar de latinoamerica (soy de chile) 
-los metodos constructores lo hice de forma protegida y no privada debido a que queria acceder a ellos desde los otros documentos
+/* 
+Los metodos constructores lo hice de forma protegida y no privada debido a que queria acceder a ellos desde los otros documentos
 mage.php & warrior.php
 
-las modificaciones que hice fueron las siguientes 
+Las modificaciones que hice fueron las siguientes 
 DAMAGE METHOD = informa sobre el dano pero el ATTACK METHOD es el que lo aplica reduciendo los puntos de salud 
 ATTACK METHOD = tmb llama al metodo morir si es que los puntos de vida bajaron o son iguales a [0].
 

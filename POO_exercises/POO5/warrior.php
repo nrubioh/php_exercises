@@ -1,10 +1,11 @@
 <?php
-/* el metodo setWeapon es una funcion estatica 
+/* 
+El metodo setWeapon es una funcion estatica 
 lo tuve que hacer de esa forma por que (CHATGPT hahaha), me dijo que era lo ideal para devolver la variable 
 y ponerla como un atributo al momento de crear a un personaje
 $player3 = new Warrior("CrazyDog", 13, 3, 9, 200, Warrior::setWeapon());
 esta fn esta en un loop while para que unicamente se acabe si escribo alguna de las palabras correspondientes
- */
+*/
 
 require_once("player.php");
 class Warrior extends Player 
