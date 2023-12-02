@@ -12,6 +12,10 @@ do {
     echo "\n";
 } while (in_array($newUser,$actualUsers));
     echo 'you have successfully registered as: '.$newUser;
+
+array_push($actualUsers, $newUser);
+$actualUsers[] = $newUser;
+print_r($actualUsers);
 //---------------------------------
 for ($i=1, $j=0 ; $i <= 10 ; $i++, $j-=2) { 
     echo "i = $i and j = $j \n";
