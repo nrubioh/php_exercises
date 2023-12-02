@@ -1,0 +1,14 @@
+{
+    "name": "nrubi/composer-modularization",
+    "type": "project3",
+    "license": "MIT",
+    "autoload": {
+        "files":[
+            "app/Logic/CreatePuppy.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
