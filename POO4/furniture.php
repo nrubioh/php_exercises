@@ -10,7 +10,6 @@ class Furniture extends Products //now you can access to property and methods in
     function __construct(string $description, float $price, string $color, string $material)
     {
         parent::__construct($description, $price); //just there are two property in C.Products
-        
         $this->strColor = $color;
         $this->strMaterial = $material;
     }
