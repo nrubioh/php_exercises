@@ -2,7 +2,7 @@
 
 namespace Available_Dogs;
 
-class Dog {
+class Dog{
     protected $name;
     protected $color;
     protected $age;
