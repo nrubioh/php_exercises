@@ -1,0 +1,20 @@
+{
+    "name": "nrubi/personal_finances",
+    "description": "Personal Finances phpMyAdmin Project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nrubioh",
+            "email": "nrubiohoskins@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\": "database/",
+            "Router\\": "router/"
+        }
+    },
+    "require": {}
+}
