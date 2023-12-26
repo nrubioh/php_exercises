@@ -45,13 +45,13 @@ return [
 6. Configure email sending settings in the `config.php` file.
 7. Open the project in your web browser (e.g., [http://localhost/your/project/path](http://localhost/your/project/path)).
 
-![FORM](../readmeImg/form_phpMailer.png?width=100)
-![https://mailtrap.io/home](../readmeImg/form_phpMailer2.png?width=100)
+![FORM](../readmeImg/form_phpMailer.png?width=70)
+![https://mailtrap.io/home](../readmeImg/form_phpMailer2.png?width=70)
 
-### Notes:
-
-- You can customize the form design by modifying the `style.css` file.
-- If you need help or have any questions, feel free to create an issue in the repository.
+> [!NOTE]
+> ### Notes:
+> - You can customize the form design by modifying the `style.css` file.
+> - If you need help or have any questions, feel free to create an issue in the repository.
 
 Thank you for using FORM!
 
@@ -102,12 +102,12 @@ return [
 6. Configura los datos de envío de correo electrónico en el archivo `config.php`.
 7. Abre el proyecto en tu navegador web (por ejemplo, [http://localhost/ruta/del/proyecto](http://localhost/ruta/del/proyecto)).
 
-![FORMULARIO](../readmeImg/form_phpMailer.png?width=100)
-![https://mailtrap.io/home](../readmeImg/form_phpMailer2.png?width=100)
+![FORMULARIO](../readmeImg/form_phpMailer.png?width=70)
+![https://mailtrap.io/home](../readmeImg/form_phpMailer2.png?width=70)
 
-### Notas:
-
-- Puedes personalizar el diseño del formulario modificando el archivo `style.css`.
-- Si necesitas ayuda o tienes alguna pregunta, no dudes en crear una issue en el repositorio.
+> [!NOTE]
+> ### Notas:
+> - Puedes personalizar el diseño del formulario modificando el archivo `style.css`.
+> - Si necesitas ayuda o tienes alguna pregunta, no dudes en crear una issue en el repositorio.
 
 ¡Gracias por utilizar FORM!
