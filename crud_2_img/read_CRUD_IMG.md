@@ -27,8 +27,8 @@ Welcome to the CRUD_IMG repository, a basic CRUD project for uploading, editing,
 4. Import the "image_crud.sql" file into the newly created database.
 5. Open the project in your web browser (e.g., [http://localhost/your/project/path](http://localhost/your/project/path)).
 
-![Example](./images/crud_2_img.png?width=100)
-![Example](./images/crud_2_img_sql.png?width=100)
+![Example](../readmeImg/crud_2_img.png?width=100)
+![Example](../readmeImg/crud_2_img_sql.png?width=100)
 
 If you need help or have any questions, feel free to create an issue in the repository.
 
@@ -63,8 +63,8 @@ Bienvenido(a) al repositorio de CRUD_IMG, un proyecto CRUD básico para subir, e
 4. Importa el archivo "image_crud.sql" a la base de datos recién creada.
 5. Abre el proyecto en tu navegador web (por ejemplo, [http://localhost/ruta/del/proyecto](http://localhost/ruta/del/proyecto)).
 
-![Ejemplo](./images/crud_2_img.png?width=100)
-![Ejemplo](./images/crud_2_img_sql.png?width=100)
+![Ejemplo](../readmeImg/crud_2_img.png?width=100)
+![Ejemplo](../readmeImg/crud_2_img_sql.png?width=100)
 
 Si necesitas ayuda o tienes alguna pregunta, no dudes en crear una issue en el repositorio.
 
