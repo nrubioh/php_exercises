@@ -14,10 +14,10 @@ Welcome to the CRUD_IMG repository, a basic CRUD project for uploading, editing,
   - Edit images
   - Delete images
 
-## Prerequisites
-
-- XAMPP or a similar local server
-- Basic knowledge of PHP and MySQL
+> [!TIP]
+> ## Prerequisites
+> - XAMPP or a similar local server
+> - Basic knowledge of PHP and MySQL
 
 ## Instructions
 
@@ -26,6 +26,9 @@ Welcome to the CRUD_IMG repository, a basic CRUD project for uploading, editing,
 3. Create a database called "image_crud" and ensure it matches the database name used in the code (connection.php file).
 4. Import the "image_crud.sql" file into the newly created database.
 5. Open the project in your web browser (e.g., [http://localhost/your/project/path](http://localhost/your/project/path)).
+
+![Example](./images/crud_2_img.png?width=100)
+![Example](./images/crud_2_img_sql.png?width=100)
 
 If you need help or have any questions, feel free to create an issue in the repository.
 
@@ -47,10 +50,10 @@ Bienvenido(a) al repositorio de CRUD_IMG, un proyecto CRUD básico para subir, e
   - Editar imágenes
   - Eliminar imágenes
 
-## Requisitos previos
-
-- XAMPP o un servidor local similar
-- Conocimientos básicos de PHP y MySQL
+> [!TIP]
+> ## Requisitos previos
+> - XAMPP o un servidor local similar
+> - Conocimientos básicos de PHP y MySQL
 
 ## Instrucciones de uso
 
@@ -59,6 +62,9 @@ Bienvenido(a) al repositorio de CRUD_IMG, un proyecto CRUD básico para subir, e
 3. Crea una base de datos llamada "image_crud" y asegúrate de que coincida con el nombre de la base de datos utilizada en el código (archivo connection.php).
 4. Importa el archivo "image_crud.sql" a la base de datos recién creada.
 5. Abre el proyecto en tu navegador web (por ejemplo, [http://localhost/ruta/del/proyecto](http://localhost/ruta/del/proyecto)).
+
+![Ejemplo](./images/crud_2_img.png?width=100)
+![Ejemplo](./images/crud_2_img_sql.png?width=100)
 
 Si necesitas ayuda o tienes alguna pregunta, no dudes en crear una issue en el repositorio.
 
